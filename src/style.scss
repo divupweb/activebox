@@ -1,0 +1,36 @@
+@import "./components/header/header.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+html {
+  font-size: 16px;
+}
+body {
+  min-width: 320px;
+}
+.shared__container {
+  max-width: 1170px;
+  margin: auto;
+  padding: 0 15px;
+}
+.shared__button {
+  background-color: #ff4343;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-decoration: none;
+  color: white;
+  display: block;
+  width: 370px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 26px 0;
+}
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 12px;
+  }
+}
