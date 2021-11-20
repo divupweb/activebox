@@ -9,7 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cardo:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;500;400;900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -19,8 +23,41 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
+
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
   </head>
   <body>
     <!-- @import "./components/header/header.html" -->
+    <main>
+      <!-- @import "./components/benifits/benifits.html" -->
+      <!-- @import "./components/portfolio/portfolio.html" -->
+      <!-- @import "./components/positions/positions.html" -->
+      <!-- @import "./components/slider/slider.html" -->
+      <!-- @import "./components/download/download.html" -->
+    </main>
+    <!-- @import "./components/footer/footer.html" -->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".multiple-items").slick({
+          infinite: true,
+          dots: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          speed: 300,
+          adaptiveHeight: true,
+          autoplay: true,
+        });
+      });
+    </script>
   </body>
 </html>

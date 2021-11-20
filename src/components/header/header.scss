@@ -127,9 +127,6 @@
     &__link::after {
       margin-top: 37px;
     }
-    .shared__button {
-      width: 315px;
-    }
   }
 }
 @media screen and (max-width: 768px) {
@@ -148,10 +145,6 @@
     }
     &__menu {
       display: block;
-    }
-    .shared__button {
-      width: 280px;
-      padding: 20px 0;
     }
   }
 }

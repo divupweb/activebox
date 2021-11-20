@@ -1,4 +1,11 @@
 @import "./components/header/header.scss";
+@import "./components/benifits/benifits.scss";
+@import "./components/portfolio/portfolio.scss";
+@import "./components/positions/positions.scss";
+@import "./components/slider/slider.scss";
+@import "./components/download/download.scss";
+@import "./components/footer/footer.scss";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +17,29 @@ html {
 }
 body {
   min-width: 320px;
+}
+.shared {
+  &__links {
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.12rem;
+    display: flex;
+    margin: 0 -5px;
+  }
+  &__link {
+    a {
+      color: #c6cbcd;
+      margin: 0 5px;
+      padding: 10px 14px;
+      border: 1px solid #c6cbcd;
+      transition: color 0.3s ease;
+      display: block;
+    }
+    a:hover {
+      color: #ff4343;
+      border: 1px solid #ff4343;
+    }
+  }
 }
 .shared__container {
   max-width: 1170px;
@@ -28,9 +58,27 @@ body {
   text-align: center;
   margin: 0 auto;
   padding: 26px 0;
+  transition: all 0.2s ease;
+}
+.shared__button:hover {
+  background-color: #e71414;
 }
 @media screen and (max-width: 1024px) {
   html {
     font-size: 12px;
+  }
+  .shared__button {
+    width: 315px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .shared__button {
+    width: 280px;
+    padding: 20px 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  .shared__button {
+    width: 100%;
   }
 }

@@ -1,0 +1,67 @@
+.benifits {
+  padding: 125px 0;
+  text-align: center;
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 -15px;
+  }
+  &__row {
+    display: flex;
+  }
+  &__row:nth-child(even) {
+    margin-top: 100px;
+  }
+  &__item {
+    max-width: 360px;
+    margin-top: 100px;
+    margin: 0 15px;
+  }
+  &__item-img {
+    width: 100px;
+    height: 100px;
+  }
+  &__item-title {
+    font-weight: 900;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: 30px 0 20px;
+    line-height: 72px;
+  }
+  &__item-description {
+    font-size: 1.12rem;
+    color: #6c7279;
+    line-height: 21px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .benifits {
+    padding: 80px 0;
+    &__row:nth-child(even) {
+      margin-top: 55px;
+    }
+    &__item-title {
+      margin: 24px 0 5px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .benifits {
+    padding: 60px 0 35px;
+    &__row {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__item {
+      margin-top: 45px;
+    }
+    &__item-title {
+      margin: 30px 0 0;
+    }
+    &__row:nth-child(even) {
+      margin-top: 0;
+    }
+  }
+}
