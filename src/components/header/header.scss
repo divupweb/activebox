@@ -32,7 +32,7 @@
     top: 100%;
     margin: 36px 0 120px;
   }
-  &__contain {
+  &__layout {
     position: relative;
     z-index: 1;
   }
@@ -73,21 +73,20 @@
     white-space: nowrap;
   }
   &__link::after {
-    animation: fade-in 0.3s ease;
+    animation: fade-in 0.5s ease;
     margin-top: 41px;
+    background-color: #babbc5 !important;
   }
   &__link:hover::after {
     content: "";
     display: block;
     width: 100%;
     height: 3px;
-    background-color: #babbc5;
     position: absolute;
-    z-index: 100;
+    z-index: 3;
   }
   &__title {
     color: white;
-    font-size: 900;
     text-transform: uppercase;
     text-align: center;
     font-size: 4rem;

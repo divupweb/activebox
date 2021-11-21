@@ -26,43 +26,50 @@ body {
     display: flex;
     margin: 0 -5px;
   }
+  &__container {
+    max-width: 1170px;
+    margin: auto;
+    padding: 0 15px;
+  }
+  &__button {
+    background-color: #ff4343;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 370px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 26px 0;
+    transition: all 0.2s ease;
+  }
+  &__button:hover {
+    background-color: #e71414;
+  }
+  &__button:active {
+    box-shadow: 4px 4px 30px #ff4343;
+    background-color: #ff4343;
+  }
   &__link {
+    margin: 0 5px;
     a {
       color: #c6cbcd;
-      margin: 0 5px;
+
       padding: 10px 14px;
       border: 1px solid #c6cbcd;
       transition: color 0.3s ease;
       display: block;
     }
+
     a:hover {
       color: #ff4343;
       border: 1px solid #ff4343;
     }
   }
 }
-.shared__container {
-  max-width: 1170px;
-  margin: auto;
-  padding: 0 15px;
-}
-.shared__button {
-  background-color: #ff4343;
-  font-size: 24px;
-  text-transform: uppercase;
-  font-weight: 900;
-  text-decoration: none;
-  color: white;
-  display: block;
-  width: 370px;
-  text-align: center;
-  margin: 0 auto;
-  padding: 26px 0;
-  transition: all 0.2s ease;
-}
-.shared__button:hover {
-  background-color: #e71414;
-}
+
 @media screen and (max-width: 1024px) {
   html {
     font-size: 12px;

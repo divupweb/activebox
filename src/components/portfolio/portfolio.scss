@@ -1,14 +1,15 @@
 .portfolio {
   overflow: hidden;
   &__list {
-    flex-wrap: wrap;
     display: flex;
     margin: 0 -2px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   &__item {
     width: 25%;
     padding: 2px;
-
+    max-width: 500px;
     &-link {
       overflow: hidden;
       position: relative;
