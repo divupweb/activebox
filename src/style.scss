@@ -79,6 +79,9 @@ body {
   }
 }
 @media screen and (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
   .shared__button {
     width: 280px;
     padding: 20px 0;

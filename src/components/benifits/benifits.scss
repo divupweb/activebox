@@ -47,6 +47,14 @@
     }
   }
 }
+@media screen and (max-width: 1024px) {
+  .benifits {
+    &__item-img {
+      width: 85px;
+      height: 85px;
+    }
+  }
+}
 @media screen and (max-width: 768px) {
   .benifits {
     padding: 60px 0 35px;
@@ -62,6 +70,10 @@
     }
     &__row:nth-child(even) {
       margin-top: 0;
+    }
+    &__item-img {
+      width: 75px;
+      height: 75px;
     }
   }
 }

@@ -7,19 +7,18 @@
     justify-content: center;
   }
   &__item {
-    width: 25%;
     padding: 2px;
-    max-width: 500px;
+    width: 380px;
+    height: 340px;
     &-link {
       overflow: hidden;
       position: relative;
       height: 100%;
       display: flex;
+      align-items: center;
+      justify-content: center;
     }
-    &-image {
-      width: 100%;
-      min-height: 100%;
-    }
+
     &-content {
       z-index: 2;
       position: absolute;
@@ -72,6 +71,8 @@
 @media screen and (max-width: 1024px) {
   .portfolio {
     &__item {
+      width: 255px;
+      height: 230px;
       &-description {
         margin-top: 20px;
       }
@@ -81,10 +82,14 @@
 @media screen and (max-width: 768px) {
   .portfolio {
     &__item {
-      width: 50%;
+      width: 160px;
+      height: 144px;
       &-description {
         margin-top: 10px;
       }
+    }
+    &__item:nth-child(even) {
+      display: none;
     }
   }
 }

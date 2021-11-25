@@ -6,12 +6,21 @@
     margin: 0 -15px;
   }
   &__item {
-    max-width: 270px;
     margin: 0 15px;
     display: flex;
     flex-direction: column;
     &-image {
+      align-self: center;
+      max-height: 290px;
+      max-width: 290px;
+      overflow: hidden;
       width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 100%;
+      }
     }
     &-name {
       font-size: 1.5rem;
@@ -58,6 +67,9 @@
   .positions {
     &__item {
       max-width: 100%;
+      &-image {
+        max-height: 100%;
+      }
     }
   }
 }

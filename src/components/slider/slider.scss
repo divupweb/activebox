@@ -37,9 +37,11 @@
 }
 .slick {
   &-dots {
-    bottom: -45px !important;
+    position: relative !important;
+    bottom: 0 !important;
+    margin-top: 25px !important;
     li button:before {
-      color: white !important;
+      color: transparent !important;
       border: 1px solid #7e5d6f;
       border-radius: 50%;
       width: 14px !important;
@@ -56,16 +58,22 @@
   &-prev {
     left: 10px !important;
     z-index: 2;
+    top: 48% !important;
   }
   &-next {
-    right: 20px !important;
+    right: 10px !important;
     z-index: 2;
+    top: 48% !important;
   }
   &-prev:before,
   &-next:before {
     font-size: 30px !important;
     width: 30px !important;
     height: 30px !important;
+  }
+  &-arrow {
+    width: 30px !important;
+    height: 28px !important;
   }
 }
 
