@@ -5,6 +5,10 @@
   background-size: cover;
   padding: 36px 0 120px;
   position: relative;
+  height: 100vh;
+}
+.header .shared__container {
+  height: 100%;
 }
 .header::after {
   content: "";
@@ -39,11 +43,12 @@
   height: 1px;
   width: 100%;
   top: 100%;
-  margin: 36px 0 120px;
+  margin: 36px 0 0;
 }
 .header__layout {
   position: relative;
   z-index: 1;
+  height: 100%;
 }
 .header__logotype {
   color: #656980;
@@ -76,9 +81,6 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.header__link {
-  position: relative;
-}
 .header__link a {
   color: white;
   text-decoration: none;
@@ -88,20 +90,46 @@
   padding: 6px 35px;
   display: block;
   white-space: nowrap;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
 }
-.header__link::after {
-  -webkit-animation: fade-in 0.5s ease;
-          animation: fade-in 0.5s ease;
-  margin-top: 41px;
-  background-color: #babbc5 !important;
+.header__link a::after {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin-top: 46px;
+  background-color: #babbc5;
 }
-.header__link:hover::after {
+.header__link a:active {
+  color: #e71414;
+}
+.header__link a:active::after {
+  background-color: #e71414;
+}
+.header__link a:hover::after {
   content: "";
   display: block;
   width: 100%;
   height: 3px;
   position: absolute;
   z-index: 3;
+  left: 0;
+}
+.header__content {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .header__title {
   color: white;
@@ -150,11 +178,14 @@
   .header__link a {
     padding: 6px 30px;
   }
-  .header__link::after {
-    margin-top: 37px;
+  .header__link a::after {
+    margin-top: 43px;
   }
 }
 @media screen and (max-width: 768px) {
+  .header {
+    height: auto;
+  }
   .header__nav {
     display: none;
   }
