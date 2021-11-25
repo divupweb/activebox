@@ -11,8 +11,8 @@
     flex-direction: column;
     &-image {
       align-self: center;
-      max-height: 290px;
-      max-width: 290px;
+      max-height: 270px;
+      max-width: 270px;
       overflow: hidden;
       width: 100%;
       display: flex;
@@ -47,7 +47,10 @@
   .positions {
     padding: 78px 0;
     &__item {
-      max-width: 225px;
+      &-image {
+        max-width: 227px;
+        max-height: 227px;
+      }
     }
   }
 }
@@ -60,16 +63,17 @@
     }
     &__item {
       margin: 50px 15px;
+      width: 280px;
+      &-image {
+        max-width: 280px;
+        max-height: 227px;
+      }
     }
   }
 }
 @media screen and(max-width:425px) {
   .positions {
     &__item {
-      max-width: 100%;
-      &-image {
-        max-height: 100%;
-      }
     }
   }
 }

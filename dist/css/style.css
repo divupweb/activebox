@@ -277,7 +277,7 @@
 }
 .portfolio__item {
   padding: 2px;
-  width: 380px;
+  width: 378px;
   height: 340px;
 }
 .portfolio__item-link {
@@ -401,8 +401,8 @@
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  max-height: 290px;
-  max-width: 290px;
+  max-height: 270px;
+  max-width: 270px;
   overflow: hidden;
   width: 100%;
   display: -webkit-box;
@@ -444,8 +444,9 @@
   .positions {
     padding: 78px 0;
   }
-  .positions__item {
-    max-width: 225px;
+  .positions__item-image {
+    max-width: 227px;
+    max-height: 227px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -461,14 +462,11 @@
   }
   .positions__item {
     margin: 50px 15px;
-  }
-}
-@media screen and (max-width: 425px) {
-  .positions__item {
-    max-width: 100%;
+    width: 280px;
   }
   .positions__item-image {
-    max-height: 100%;
+    max-width: 280px;
+    max-height: 227px;
   }
 }
 .slider {
