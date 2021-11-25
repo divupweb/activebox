@@ -277,8 +277,15 @@
 }
 .portfolio__item {
   padding: 2px;
-  width: 378px;
+  width: 25%;
+  max-width: 500px;
   height: 340px;
+}
+.portfolio__item-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .portfolio__item-link {
   overflow: hidden;
@@ -356,7 +363,6 @@
 }
 @media screen and (max-width: 1024px) {
   .portfolio__item {
-    width: 255px;
     height: 230px;
   }
   .portfolio__item-description {
@@ -364,8 +370,12 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .portfolio {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .portfolio__item {
-    width: 160px;
+    width: 50%;
     height: 144px;
   }
   .portfolio__item-description {
